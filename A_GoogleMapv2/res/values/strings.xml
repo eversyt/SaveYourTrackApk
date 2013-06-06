@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Save your track</string>
+    <string name="quit">Exit</string>
+    <string name="cancel">Cancel</string>
+    <string name="rl_textview1">Time: </string>
+    <string name="rl_textview2">Distance: </string>
+    <string name="rl_textview3">Altitude: </string>
+    <string name="rl_button1_description">Play/Record</string>
+    <string name="rl_button2_description">Pause</string>
+    <string name="rl_button3_description">Stop</string>
+    <string name="rl_edittext_hint">Name of track</string>
+    <string name="ml_button_New">New</string>
+    <color name="recordButtonPressed">#ff191988</color>
+    <color name="recordButtonNormal">#ff3333aa</color>
+    <color name="listBackground">#ff000077</color>
+        
+    <string-array name="menu">
+    	<item>Trier</item>
+    	<item>Hamburg</item>
+    	<item>Moskow</item>
+    	<item>Kiev</item>
+    	<item>Barcelona</item>
+    	<item>Current Position</item>
+	</string-array>
+
+</resources>

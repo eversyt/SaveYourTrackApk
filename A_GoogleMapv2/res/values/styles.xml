@@ -1,0 +1,85 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="DimentionsMW">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textIsSelectable">false</item>
+    </style>    
+    
+    <style name="DimentionsWM">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textIsSelectable">false</item>
+    </style>  
+    
+    <style name="RightLayout">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/listBackground</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textIsSelectable">false</item>
+    </style>
+        
+    <style name="DimentionsMW.ListStyle">
+        <item name="android:textColor">#ffffffff</item>
+		<item name="android:background">@color/listBackground</item>
+        <item name="android:padding">1dp</item>
+    </style>
+    
+    <style name="DimentionsWM.ListStyle">
+        <item name="android:textColor">#ffffffff</item>
+		<item name="android:background">@color/listBackground</item>
+        <item name="android:padding">1dp</item>
+    </style>
+    
+    <style name="DimentionsWM.ListStyle.Big">
+        <item name="android:textSize">14sp</item>
+    </style> 
+
+    <style name="DimentionsMW.ListStyle.Small">
+        <item name="android:textSize">11sp</item>
+    </style>
+    
+    <style name="DimentionsMW.RecordButtons">
+        <item name="android:textColor">#ffcccccc</item>
+		<item name="android:background">@color/recordButtonNormal</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:textSize">20sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>    
+    
+    <style name="DimentionsMW.EditText">
+        <item name="android:textColor">#ff000000</item>
+		<item name="android:background">#ffffffff</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">14sp</item>
+		<item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>      
+    </style> 
+    
+    <style name="DimentionsWM.ImageButton">
+		<item name="android:background">@drawable/ic_empty</item>
+        <item name="android:layout_gravity">left</item>      
+    </style> 
+    
+</resources>

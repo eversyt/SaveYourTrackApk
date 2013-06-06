@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/rl_mapLayout"
+        android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="3" >
+        
+	    <fragment
+	        android:id="@+id/rl_map"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        class="com.google.android.gms.maps.MapFragment" />
+    </LinearLayout>
+    
+    <LinearLayout
+	    style="@style/RightLayout" >
+    
+	    <EditText
+	        android:id="@+id/rl_edittext_Name"
+	        style="@style/DimentionsMW.EditText"
+	        android:inputType="textCapSentences"
+	        android:hint="@string/rl_edittext_hint"
+	        android:enabled="true"
+	        android:labelFor="11" 
+	        android:selectAllOnFocus="true" />
+        
+        <TableLayout 
+            android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1" 
+			android:layout_gravity="top" >
+			    			
+            <TableRow 
+                style="@style/DimentionsMW" >
+			
+                <TextView 
+			        style="@style/DimentionsWM.ListStyle.Big"
+			        android:text ="@string/rl_textview1" />
+                
+                <TextView 
+			        android:id="@+id/rl_textview_Time"
+			        style="@style/DimentionsWM.ListStyle.Big" />
+                
+            </TableRow>
+			
+            <TableRow 
+                style="@style/DimentionsMW" >
+                
+			    <TextView 
+			        style="@style/DimentionsWM.ListStyle.Big"
+			        android:text ="@string/rl_textview2" />
+			    
+			    <TextView 
+			        android:id="@+id/rl_textview_Distance"
+			        style="@style/DimentionsWM.ListStyle.Big" />
+			    
+			</TableRow>
+			    
+            <TableRow 
+                style="@style/DimentionsMW" >
+                
+			    <TextView 
+			        style="@style/DimentionsWM.ListStyle.Big"
+			        android:text ="@string/rl_textview3" />
+			    
+			    <TextView 
+			        android:id="@+id/rl_textview_Altitude"
+			        style="@style/DimentionsWM.ListStyle.Big" />
+			    
+			</TableRow>
+	    </TableLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/rl_layout_Record"
+		    style="@style/DimentionsMW.RecordButtons"
+		    android:layout_gravity="bottom"
+		    android:gravity="center"
+		    android:orientation="horizontal" >
+
+		    <ImageButton
+		        android:id="@+id/rl_button_Play_Record"
+		        style="@style/DimentionsWM.ImageButton"
+				android:src="@drawable/ic_play_64_on"
+				android:contentDescription="@string/rl_button1_description" />
+		    
+			<ImageButton
+		        android:id="@+id/rl_button_Pause"
+		        style="@style/DimentionsWM.ImageButton"
+				android:src="@drawable/ic_pause_64_off"
+				android:contentDescription="@string/rl_button2_description" />
+			
+			<ImageButton
+		        android:id="@+id/rl_button_Stop"
+		        style="@style/DimentionsWM.ImageButton"
+				android:src="@drawable/ic_stop_64_off"
+				android:contentDescription="@string/rl_button3_description" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

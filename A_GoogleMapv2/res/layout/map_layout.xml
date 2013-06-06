@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ml_mapLayout"
+        android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="3" >
+        
+	    <fragment
+	        android:id="@+id/ml_map"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        class="com.google.android.gms.maps.MapFragment" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ml_linearlayout_List"
+	    style="@style/RightLayout" >
+	    
+	    <ListView
+	        android:id="@+id/ml_listview_Tracks"
+	        style="@style/DimentionsMW.ListStyle"
+	        android:layout_weight="1" />
+	
+	    <Button
+	        android:id="@+id/ml_button_New"
+		    style="@style/DimentionsMW.RecordButtons"
+		    android:layout_gravity="bottom"
+			android:text="@string/ml_button_New"
+			android:drawableLeft="@drawable/ic_plus_64" />
+	</LinearLayout>
+</LinearLayout>
